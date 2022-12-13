@@ -4,7 +4,7 @@ export default function Emp() {
   const fetchData = async () => {
     const response = await fetch('https://jsonplaceholder.typicode.com/todos')
     if (!response.ok) {
-      throw new Error('Data coud not be fetched!')
+      throw new Error('Data could not be fetched!')
     } else {
       return response.json()
     }
